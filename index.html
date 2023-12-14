@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de peliculas</title>
+        <script src="editMovies.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">     
+    </head>
+    <body>
+        <!-- Inputs -->
+        <div class = "maindiv">
+            <div class = "div1">
+                <div class = "div2">     
+                    <label for ="titleTextbox">Title: </label><br>
+                    <input type="text" id="titleTextbox" name="titleTextbox"><br>
+                </div>
+
+                <div class = "div2">
+                    <label for ="yearTextbox">Year: </label><br>
+                    <input type="text" id="yearTextbox" name="yearTextbox"><br>
+                </div>
+            </div>
+
+            <div class = "div1">
+                <div class = "div2">
+                    <label for ="durationTextbox">Duration: </label><br>
+                    <input type="text" id="durationTextbox" name="durationTextbox"><br>
+                </div>
+
+                <div class = "div2">
+                    <label for ="genreTextbox">Genre: </label><br>
+                    <input type="text" id="genreTextbox" name="genreTextbox"><br>
+                </div>
+            </div>
+
+            <div style = "padding-top: 30px;">
+                <label for ="directorTextbox">Director: </label><br>
+                <input type="text" id="directorTextbox" name="directorTextbox"><br>
+            </div>
+
+            <div class = "div2">
+                <label for = "descriptionTextArea">Sinopsis: </label><br>
+                <textarea id = "descriptionTextArea"></textarea><br>
+                
+            </div>
+            <div class = "div0">
+                <button id="addButton">Add movie</button>
+                <button id="deleteButton">Delete movie</button>
+                <button id="editButton">Edit movie</button>
+            </div>
+        </div>
+
+
+        <!-- Movie table -->
+        <table id = "movieTable">
+            <tr>
+                <th>Title</th>
+                <th>Release</th>
+                <th>Duration</th>
+                <th>Genre</th>
+                <th>Director</th>
+                <th>Synopsis</th>
+            </tr>
+            <tr onclick = "getRow(this)">
+                <td>8 mile</td>
+                <td>November 8, 2002</td>
+                <td>1:50:00</td>
+                <td>Drama</td>
+                <td>Curtis Hanson</td>
+                <td>Follows a young rapper in the Detroit area, struggling with every aspect of his life, wants to make it big but his friends and foes make this odyssey of rap harder than it may seem.</td>
+            </tr>
+            <tr onclick = "getRow(this)">
+                <td>Gladiator</td>
+                <td>May 5, 2000</td>
+                <td>2:35:00</td>
+                <td>Action, Adventure, Drama</td>
+                <td>Ridley Scott</td>
+                <td>A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</td>
+            </tr>
+            <tr onclick = "getRow(this)">
+                <td>Titanic</td>
+                <td>December 19, 1997</td>
+                <td>3:14:00</td>
+                <td>Drama, Romance</td>
+                <td>James Cameron</td>
+                <td>The plot follows a seventeen-year-old aristocrat who falls in love with a kind but poor artist aboard the luxurious Titanic.</td>
+            </tr>
+        </table>
+    </body>
+</html>

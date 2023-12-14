@@ -1,0 +1,90 @@
+body{
+    background-color:#232527;
+}
+
+input{
+    height: 32px;
+    width: 230px;
+    background-color:#383838;
+    border-radius: 4px;
+}
+
+label{
+    width: 200px; 
+    text-align: center;
+}
+
+textarea{
+    background-color:#383838;
+    width: 400px; 
+    max-width: 500px;
+    min-width: 500px;
+}
+
+input,textarea{
+    border-style: none;
+}
+
+input,label,textarea,button{
+    margin: 0px 20px; /* Space between the div border and the elements*/
+    font-size: larger;
+    font-family: serif;
+    color: whitesmoke;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #383838;
+}
+
+.maindiv{
+    width: fit-content; /* size is determined by the content inside*/
+    margin: auto; /* always stay centered */
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.div1{
+    width: fit-content;
+    margin: auto; 
+    display: flex; /* allows multiple elements in a row */
+}
+
+.div2{
+    padding-top: 30px;
+    width: fit-content;
+    margin: auto;
+    display: block; /* forcefully places each element below another */
+}
+
+.div0{
+    width: fit-content;
+    display: flex; /* allows multiple elements in a row */
+}
+
+table {
+    border-collapse: collapse;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    font-size: large;
+    font-weight: 250;
+    font-family: Georgia, serif;
+    color: whitesmoke;
+}
+
+th,td{
+    padding: 15px;
+}
+  
+tr:nth-child(even) {
+    background-color: #383838;
+}
